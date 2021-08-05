@@ -1,0 +1,149 @@
+body{
+    height: 100vh;
+    display: flex;
+}
+/*sidebar*/
+#sidebar{
+    width: 25%;
+    background: rgba(0, 0, 0, 0.04);
+    padding: 45px 45px 40px 45px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+#sidebar h1 a{
+    font-size: 30px;
+    color: black;
+}
+#sidebar nav{
+    margin-top: 85px;
+    flex: 1;
+}
+#sidebar nav li{
+    padding: 10px 0;
+}
+#sidebar nav li a{
+    color:rgba(0, 0, 0, 0.4) ;
+    position: relative;
+}
+#sidebar nav a.active{
+    color: black;
+}
+#sidebar nav li a::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    background: #000;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    transform: scale(0);
+}
+#sidebar nav li a:hover::after {
+    transform: scale(1);
+}
+
+#sidebar nav li a.active::after {
+    transform: scale(1);
+}
+#sidebar footer .Copyright{
+    color:rgba(0, 0, 0, 0.4);
+}
+#sidebar .share a {
+    color: black;
+    font-size: 14px;
+}
+#sidebar footer {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar .share {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 25px;
+}
+
+/*main*/
+#main{
+    width: 75%;
+    overflow-y: scroll;
+    position: relative;
+    transition: all 0.5s ease;
+}
+#main .main-wrapper{
+    height: 2000px;
+}
+#footer a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#footer {
+    padding: 84px;
+    background: #132238;
+    font-size: 14px;
+}
+
+#footer .cate-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer .cate {
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    width: 33.33%;
+}
+#footer .cate li {
+    display: flex;
+    padding: 10px 0;
+}
+
+#footer .cate h3 {
+    margin-bottom: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#footer .cate li.list {
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#footer .count {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#footer .contact a {
+    color: #fff;
+}
+
+#footer .contact i {
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+#footer .copyright {
+    margin-top: 40px;
+}
+
+#footer .copyright span {
+    color: #999;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+#footer .copyright span:hover {
+    color: #fff;
+}

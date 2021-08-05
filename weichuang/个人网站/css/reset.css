@@ -1,0 +1,149 @@
+/*CSS Reset*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-size-adjust: none;
+
+  -webkit-text-size-adjust: 100% !important;
+  -webkit-touch-callout: none;
+}
+
+body {
+  outline: 0;
+  background: #fff;
+  color: #999999;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.8;
+
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: normal;
+  font-weight: 400;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+fieldset,
+img {
+  border-style: none;
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s all ease;
+
+  -webkit-touch-callout: none;
+}
+
+:focus {
+  outline: 0;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+.hide {
+  display: none;
+}
+
+/* .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+} */
